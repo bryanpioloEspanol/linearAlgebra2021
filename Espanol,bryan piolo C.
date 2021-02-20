@@ -1,0 +1,28 @@
+name = input("Enter Name: ")
+student_number = input("enter number; ")
+course_name = input("Enter course name: ")
+pg = int(input("Enter prelim grade: "))
+mg = int(input("Enter midterm grade: "))
+fg = int(input("Enter finals grade: "))
+
+sem_grade=(pg+mg+fg)/3
+
+
+if sem_grade>=71 and sem_grade<=100:
+    print("Happy")
+    print("\U0001F600")
+    
+elif sem_grade>=70 and sem_grade<=70:
+    print("Lol")
+    print("\U0001F606")
+else:
+    print("Sad")
+    print("\U0001F62D")
+    
+print('_' * 70)
+print("Hello {}, your course is: {}".format(name,course_name))
+print("Hello {}, your Student is: {}".format(name,student_number))
+print("Hello {}, your Prelim grade is: {}".format(name,pg))
+print("Hello {}, your Midterm grade is: {}".format(name,mg))
+print("Hello {}, your Final grade is: {}".format(name,fg))
+print("Hello {}, your semestral grade is: {}".format(name,sem_grade))
